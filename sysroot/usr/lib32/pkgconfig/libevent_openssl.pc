@@ -1,0 +1,16 @@
+#libevent pkg-config source file
+
+prefix=/usr
+exec_prefix=/usr
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libevent_openssl
+Description: libevent_openssl adds openssl-based TLS support to libevent
+Version: 2.1.8-stable
+Requires: libevent
+Conflicts:
+Libs: -L${libdir} -levent_openssl
+Libs.private: -lcrypto  -L/tmp/zgalijas_SB_LEASE_ID_268970/buildroot/br/output/zc706_linux_linaro/host/usr/arm-buildroot-linux-gnueabihf/sysroot/usr//lib -lssl -lcrypto     
+Cflags: -I${includedir} -I/tmp/zgalijas_SB_LEASE_ID_268970/buildroot/br/output/zc706_linux_linaro/host/usr/arm-buildroot-linux-gnueabihf/sysroot/usr/include  
+
