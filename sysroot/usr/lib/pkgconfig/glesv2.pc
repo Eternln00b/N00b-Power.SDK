@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}//home/maximilien/projets/git/sysroot_git/N00b-Power.SDK/sysroot/usr/lib
+includedir=${prefix}//home/maximilien/projets/git/sysroot_git/N00b-Power.SDK/sysroot/usr/include
+
+Name: glesv2
+Description: Mali OpenGL ES 2.0 library
+Version: 2.0
+Libs: -L${libdir} -lGLESv2
+Libs.private: -lm -lpthread
+Cflags: -I${includedir}

@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}//home/maximilien/projets/git/sysroot_git/N00b-Power.SDK/sysroot/usr/lib
+includedir=${prefix}//home/maximilien/projets/git/sysroot_git/N00b-Power.SDK/sysroot/usr/include
+
+Name: glesv1_cm
+Description: Mali OpenGL ES 1.1 CM library
+Version: 1.1
+Libs: -L${libdir} -lGLESv1_CM
+Libs.private: -lm -lpthread
+Cflags: -I${includedir}
