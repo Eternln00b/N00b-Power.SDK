@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/maximilien/projets/git/N00b-Power.SDK/sysroot/usr/lib'
+libdir='/home/maximilien/projets/git/N00b-Power.SDK_edit/N00b-Power.SDK/sysroot/usr/lib'
