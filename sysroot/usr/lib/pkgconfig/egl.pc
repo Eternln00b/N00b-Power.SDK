@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}//home/maximilien/projets/git/sysroot_git/N00b-Power.SDK/sysroot/usr/lib
+includedir=${prefix}//home/maximilien/projets/git/sysroot_git/N00b-Power.SDK/sysroot/usr/include
+
+Name: egl
+Description: Mali EGL library
+Version: 1.4
+Libs: -L${libdir} -lEGL
+Libs.private: -lm -lpthread
+Cflags: -I${includedir}
